@@ -1,0 +1,352 @@
+html {
+    /**Reset para rems**/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/** General **/
+
+@font-face {
+    font-family: segoi-ui;
+    src: url('../segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+}
+
+body {
+    font-family: segoi-ui;
+}
+
+.contenedor {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    /**Le doy un tamaño maximo de 100% del contenedor a la imagen**/
+    max-width: 100%;
+}
+
+
+/**Utilidades**/
+
+.seccion {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fw-400 {
+    /**Para hacer textos mas delgados**/
+    font-weight: 400;
+}
+
+.centrar-texto h2 {
+    text-align: center;
+    color: #2a4b7a;
+    padding-bottom: 5rem;
+}
+
+
+/** Header **/
+.background{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    background-image: url("../img/site-header-background.jpeg");
+}
+.contenido-header {
+    height: 100%;
+    /**posiciona elementos de acuerdo a propiedades de flexbox**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagen-grande h1{
+    font-size: 5.8rem;
+    color: #053477;
+    position: absolute;
+    width: 40%;
+    z-index: 3;
+    padding: 28rem 20rem;
+}
+.background .blackground{
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(100, 100, 100, 0.4);
+    position: absolute;
+    z-index: 2;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.main-content {
+    padding: 5rem 4rem;
+}
+.barra-menu {
+    margin: 1rem 0;
+    align-content: center;
+}
+.logo {
+    flex-basis: 20%;
+}
+
+
+/**Navegador**/
+
+.navegacion {
+    margin: 2rem 0 2rem;
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 3.5rem;
+}
+
+.navegacion a:hover {
+    color: gray;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+nav {
+    float: left;
+    /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #053477;
+    text-decoration: none;
+}
+
+
+/** Titulo **/
+
+
+/**Main**/
+.mainF {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    height: 48rem;
+}
+.mainF h2 {
+    font-size: 5rem;
+    color: #2a4b7a;
+}
+.mainF p {
+    font-size: 1.8rem;
+    color: #053477;
+}
+.main-content {
+    padding: 7rem 4rem;
+}
+.NuestroT{
+    display: flex;
+    flex-direction: column;
+}
+.NuestroT img {
+    width: 9rem;
+}
+
+.NuestroT h3 {
+    font-size: 3rem;
+    color: rgb(255, 145, 0);
+}
+.Domicilio {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.DomText {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.Encomienda {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.EncText {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.Economia {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.EcoText {
+    display: flex;
+    width: 45rem;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.NuestroE {
+    display: flex;
+    width: 120rem;
+    justify-items: center;
+    text-align: center;
+}
+.TamañoText h2{
+    font-size: 7rem;
+    color:#2a4b7a;
+    padding-bottom: 5rem;
+    text-align: center;
+    width: 100%;
+}
+.NuestroE h3 {
+    font-size: 2.5rem;
+    color: #f75f1c;
+}
+.NuestroE p {
+    font-size: 1.8rem;
+    color: #053477;
+}
+.ContentMargen{
+    margin: 0 2rem;
+}
+
+/**Contacto**/
+.Center {
+    display: flex;
+    background-color: #2a4b7a;
+    flex-direction: row;
+    height: 50rem;
+}
+.Center legend {
+    font-size: 2.2rem;
+    color: #f75f1c;
+}
+.Center label {
+    color: white;
+}
+.Center li {
+    color: white;
+}
+.Center .boton {
+    color: white;
+    background-color: #e35619;
+    width: 1.8rem;
+    padding: 1rem 6rem 1rem 2.2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    font-size: 1.5;
+}
+.Correo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 55rem;
+}
+input, textarea, select{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border-style: none;
+}
+.BarraIzq {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50rem;
+}
+.Titulo {
+    flex-basis: 30%;
+    color: #f75f1c;
+}
+.Titulo h2 {
+    font-size: 3.5rem;
+    margin-top: 30%;
+}
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    margin-top: 3rem;
+}
+.Formulario label {
+    font-size: 1.3rem;
+}
+.Entrada {
+    height: 20rem;
+}
+.BarraIzq ul {
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+/**Botones**/
+
+
+/**Footer**/
+.Social {
+    display: flex;
+    background-color: #ad481d;
+    height: 5rem;
+    justify-content: center;
+}
+.Social img{
+    padding: 0 10rem;
+}
+footer span::after {
+    content: "";
+    display: block;
+    width: 33,3rem;
+    height: 0.2rem;
+    background-color: #e35619;
+}
+.Textofooter {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: #2a4b7a;
+}
+footer article{
+    width: 22rem;
+}
+.Cajatext {
+    width: 100rem;
+    margin-left: 25%;
+}
